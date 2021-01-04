@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Microsoft.AspNet.Identity;
 
 namespace DemoECommerce.Controllers
 {
@@ -13,6 +14,12 @@ namespace DemoECommerce.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
+            string userId = RequestContext.Principal.Identity.GetUserId();
+
+            System.Diagnostics.Debug.WriteLine("*************************************************************************************");
+            System.Diagnostics.Debug.WriteLine(userId);
+            System.Diagnostics.Debug.WriteLine("*************************************************************************************");
+
             return new string[] { "value1", "value2" };
         }
 
