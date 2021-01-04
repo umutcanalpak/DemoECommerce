@@ -18,7 +18,7 @@ namespace DemoECommerce.Controllers
 
             System.Diagnostics.Debug.WriteLine("*************************************************************************************");
             System.Diagnostics.Debug.WriteLine(userId);
-            System.Diagnostics.Debug.WriteLine("test");
+            System.Diagnostics.Debug.WriteLine("testa");
             System.Diagnostics.Debug.WriteLine("*************************************************************************************");
 
             return new string[] { "value1", "value2" };
